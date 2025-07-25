@@ -1,5 +1,5 @@
-# Pureshell-Power-of-10
-Pureshell Power of 10
+# Powershell-Power-of-10
+Ppwershell Power of 10
 $Env:USER = "Hani"
 Write-Host "Greetings, $Env:USER!"
 Write-Host "Whatever number you start with, I will morph it into 10 through the powers of mathematics!`n"
