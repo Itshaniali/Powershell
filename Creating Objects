@@ -1,0 +1,4 @@
+$person = New-Object -TypeName PSCustomObject
+$person | Add-Member -MemberType NoteProperty -Name "FirstName" -Value "Hani"
+$person | Add-member -MemberType Scriptmethod -Name "greeting" -Value {Write-Host "Hello!"}
+$person.greeting()
