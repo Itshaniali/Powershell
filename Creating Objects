@@ -2,3 +2,10 @@ $person = New-Object -TypeName PSCustomObject
 $person | Add-Member -MemberType NoteProperty -Name "FirstName" -Value "Hani"
 $person | Add-member -MemberType Scriptmethod -Name "greeting" -Value {Write-Host "Hello!"}
 $person.greeting()
+
+An example using Hashtables - same thing as above, less work and code is easier to read
+$person = [PSCustomObject]@{
+  Name = "Hani"
+  Age = 24
+}
+$person | Get-Member -MemberType NoteProperty
