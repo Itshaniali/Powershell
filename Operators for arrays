@@ -1,0 +1,12 @@
+$spanish_nums_1 = "Uno", "Dos", "Tres"
+$spanish_nums_2 = "Cuatro", "Cinco"
+
+$spanish_nums = $spanish_nums_1 + $spanish_nums_2
+$is_seis_in_spanish_nums = $spanish_nums -contains "seis", "seis" -in $spanish_nums
+[int[]]$nums = 1, 2, 3, 4, 5
+$spanish_nums_join_string = $spanish_nums -join ", "
+$nums_join_string = $nums -join " >> "
+
+Write-Host `nNumbers are: $nums_join_string
+Write-Host Spanish numbers are: $spanish_nums_join_string
+Write-Host Is seis in spanish_nums? $is_seis_in_spanish_nums
